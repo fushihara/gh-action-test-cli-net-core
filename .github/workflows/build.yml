@@ -4,11 +4,11 @@ jobs:
   build:
     runs-on: windows-latest
     steps:
-      - uses: actions/checkout@v1
-      - uses: actions/setup-dotnet@v1.0.2 # >= v1.1.0 だと dotnet run に失敗する
+      - uses: actions/checkout@v3
+      - uses: actions/setup-dotnet@v2
         with:
-          dotnet-version: 3.0.100
-      - run: dotnet build --configuration Release
+          dotnet-version: 6.x.x
+      - run: dotnet publish -c Release
       - uses: actions/upload-artifact@v1
         with:
           name: artifact
