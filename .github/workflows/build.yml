@@ -13,4 +13,4 @@ jobs:
         with:
           name: artifact
           path: ./ConsoleApp1/
-      - run: dotnet run --configuration Release --project ./
+#      - run: dotnet run --configuration Release --project ./
