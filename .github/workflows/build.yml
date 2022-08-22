@@ -12,5 +12,4 @@ jobs:
       - uses: actions/upload-artifact@v3
         with:
           name: artifact
-          path: ./ConsoleApp1/
-#      - run: dotnet run --configuration Release --project ./
+          path: ./ConsoleApp1/Release/net6.0-windows/
